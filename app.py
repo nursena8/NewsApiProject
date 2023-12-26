@@ -1,6 +1,6 @@
 class NEWS_API_Project:
 
-    def main():
+    def main(self):
         """importing some necesarry libraries"""
 
         import pandas as pd #data preprocessing
@@ -218,4 +218,5 @@ class NEWS_API_Project:
         #column ekleme _name__main readme projeleri string metoları plotlar textden hangi kategori olduğunu bulma
 
 if __name__=="main":
-    main()
+    project=NEWS_API_Project()
+    project.main()
