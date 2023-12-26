@@ -1,5 +1,3 @@
-### Bu proje bir haber sitesinin api 'ı kullanılarak verileri alıp bu verileri işleyerek ana bir fikir edinmek için yapılmıştır.
-
 # NewsAPI Project
 NewsAPI have used a news sites api ,This project is designed to gather and process data using the API of a news website to gain insights into various news categories.
 - [Usage api](https://newsapi.org)
@@ -27,7 +25,7 @@ To run this project, you'll need:
 1. Clone this repository.
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Obtain a NewsAPI key and replace `YOUR_API_KEY` in the code with your actual key.
-4. Install 'pip install newsapi-python','!pip install nltk' to use apiclient and nltk library.
+4. Install `pip install newsapi-python`,'pip install nltk' to use apiclient and nltk library.
 5. You can also run app.py too.
 6. Run the provided scripts to fetch, process, and analyze the news data.
 
