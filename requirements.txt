@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+nltk
+nlp_rake
+wordcloud
+re
+counter
+seaborn
+scikit-learn
