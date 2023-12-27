@@ -20,7 +20,8 @@ class NEWS_API_Project:
         from sklearn.model_selection import train_test_split # splitting dataframe
         from sklearn.ensemble import RandomForestClassifier # random forest modeling
         from sklearn.metrics import accuracy_score, classification_report # useful metrics
-
+        from sklearn.pipeline import Pipeline # to create pipeline
+        
         """# data collecting"""
 
         newsapi=NewsApiClient(api_key=NEW_API) # using Client to use api
