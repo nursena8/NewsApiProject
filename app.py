@@ -215,7 +215,46 @@ class NEWS_API_Project:
 
             plot_most_common_words_in_category("business",df)
 
-        #column ekleme _name__main readme projeleri string metoları plotlar textden hangi kategori olduğunu bulma
+        # modeling
+        df["category"].value_counts() # category values are  imbalanced but we can use top 4 categories.
+        # RandomForestmodel
+        # I have choosen this model becasue its resistant overfitting imbalanced class
+        stop_words = set(stopwords.words('english'))
+
+        def preprocess_text(text):
+            text = re.sub('[^a-zA-Z]', ' ', text)
+            text = text.lower()
+            text = text.split()
+            text = [word for word in text if not word in stop_words]
+            text = ' '.join(text)
+            return text
+
+        df['clean_text'] = df["description"].apply(preprocess_text)
+
+        X = df['clean_text']
+        y = df['category']
+        # test_size= i have choosen 0.3 for better result
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=818)
+
+        pipeline = Pipeline([
+            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 3))),
+            ('clf', RandomForestClassifier(n_estimators=100, random_state=818))
+        ])
+        # fit pipeline
+        pipeline.fit(X_train, y_train)
+        # predict test dataset
+        predictions = pipeline.predict(X_test)
+        print(classification_report(y_test, predictions))
+        # These warnings indicate that your classification model struggles to predict or couldn't predict some classes
+        # we should improve our model or we can increase observation count  too.
+        # predict with any text
+        def predict_category(text):
+            processed_text = preprocess_text(text)
+            predicted_category = pipeline.predict([processed_text])
+            return predicted_category[0]
+
+        predict_category("busines ,trump,sports")
+        predict_category("sports") # acctually model is not too well to predict without general as we can see :)
 
 if __name__=="main":
     project=NEWS_API_Project()
