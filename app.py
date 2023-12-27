@@ -261,7 +261,6 @@ if __name__=="main":
     project=NEWS_API_Project()
     project.main()
 
-#if you want to run this file you can run this line of code too
 """
 project=NEWS_API_Project()
 project.main()
