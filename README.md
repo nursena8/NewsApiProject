@@ -34,8 +34,7 @@ To run this project, you'll need:
 The project demonstrates how to use the NewsAPI to collect news data, preprocess the information, build predictive models, and visualize insights based on news categories. This can be further expanded to encompass more sophisticated analysis and visualization techniques or integrated into larger-scale application
 - We can predict category with text that is awsome :)
 ### Let's have a quick look up  to the project
-
-[](https://github.com/nursena8/NewsApiProject/assets/115145369/1249f52c-34c7-4321-8ab5-e536563d6d23)
+![](https://github.com/nursena8/NewsApiProject/assets/115145369/1249f52c-34c7-4321-8ab5-e536563d6d23)
 - Most coomon words
 
 ![](https://github.com/nursena8/NewsApiProject/assets/115145369/be57d7fd-7ba9-4544-94b6-d84d82bb6b75)
