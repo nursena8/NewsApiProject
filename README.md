@@ -17,7 +17,7 @@ The primary aim of this project is to extract data from a news website using its
 
 To run this project, you'll need:
 - Python 3
-- Necessary Python libraries (nltk, wordcloud, matplotlib, pandas, scikit-learn,numpy)
+- Necessary Python libraries (nltk, wordcloud, matplotlib, pandas, scikit-learn,numpy,imblearn)
 - Access to the NewsAPI with an API key
 
 ## Usage
