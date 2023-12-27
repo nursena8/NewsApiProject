@@ -21,7 +21,7 @@ class NEWS_API_Project:
         from sklearn.ensemble import RandomForestClassifier # random forest modeling
         from sklearn.metrics import accuracy_score, classification_report # useful metrics
         from sklearn.pipeline import Pipeline # to create pipeline
-        
+
         """# data collecting"""
 
         newsapi=NewsApiClient(api_key=NEW_API) # using Client to use api
@@ -260,3 +260,9 @@ class NEWS_API_Project:
 if __name__=="main":
     project=NEWS_API_Project()
     project.main()
+
+#if you want to run this file you can run this line of code too
+"""
+project=NEWS_API_Project()
+project.main()
+"""
