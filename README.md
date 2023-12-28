@@ -26,7 +26,7 @@ To run this project, you'll need:
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Obtain a NewsAPI key and replace `YOUR_API_KEY` in the code with your actual key.
 4. Install `pip install newsapi-python`,'pip install nltk' to use apiclient and nltk library.
-5. You can also run app.py too.
+5. If you dont want to run ipynb file ,You can also run app.py too.
 6. Run the provided scripts to fetch, process, and analyze the news data.
 
 ## Conclusion
@@ -41,3 +41,7 @@ The project demonstrates how to use the NewsAPI to collect news data, preprocess
 - news languages
 
 Feel free to contribute or use this project as a reference for working with news-related APIs and data processing tasks.
+## Useful links that i have used
+* (https://pandas.pydata.org/docs/reference/index.html)
+* (https://matplotlib.org/stable/users/index.html)
+* (https://www.kaggle.com)
