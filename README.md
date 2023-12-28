@@ -26,7 +26,7 @@ To run this project, you'll need:
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Obtain a NewsAPI key and replace `YOUR_API_KEY` in the code with your actual key.
 4. Install `pip install newsapi-python`,'pip install nltk' to use apiclient and nltk library.
-5. You can also run app.py too.
+5. If you dont want to run ipynb file ,You can also run app.py too.
 6. Run the provided scripts to fetch, process, and analyze the news data.
 
 ## Conclusion
