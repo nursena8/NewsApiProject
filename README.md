@@ -41,3 +41,7 @@ The project demonstrates how to use the NewsAPI to collect news data, preprocess
 - news languages
 
 Feel free to contribute or use this project as a reference for working with news-related APIs and data processing tasks.
+## Useful links that i have used
+* (https://pandas.pydata.org/docs/reference/index.html)
+* (https://matplotlib.org/stable/users/index.html)
+* (https://www.kaggle.com)
